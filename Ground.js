@@ -7,11 +7,12 @@ class Ground {
       this.width = width;
       this.height = height;
       World.add(world, this.body);
+      this.color="brown";
     }
     display(){
       var pos =this.body.position;
       rectMode(CENTER);
-      fill("brown");
+      fill(this.color);
       rect(pos.x, pos.y, this.width, this.height);
     }
   };
